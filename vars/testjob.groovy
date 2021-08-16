@@ -1,3 +1,12 @@
 def call(String name = 'user') {
-  echo "Welcome, ${name}."
+  pipeline {
+    
+    stages {
+      stage(test-shared-libraries) {
+        steps {
+             echo "Welcome, ${name}."
+        }
+      }
+    }
+  }
 }
