@@ -1,11 +1,7 @@
 
 def call(String repoUrl) {
   pipeline {
-       agent {
-         docker {
-           image 'maven:3.5.0-jdk-8'
-           args '-v /var/run/docker.sock:/var/run/docker.sock'
-          }
+       agent any
         }
        stages {
            stage("Tools initialization") {
