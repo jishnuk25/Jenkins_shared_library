@@ -1,10 +1,7 @@
 
 def call(String repoUrl) {
   pipeline {
-    agent {
-      label 'master'
-        }
-     }
+    
      stages {
          stage("Tools initialization") {
              steps {
