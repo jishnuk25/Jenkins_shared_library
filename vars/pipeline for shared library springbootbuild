@@ -1,0 +1,5 @@
+@Library('MyLibrary') _
+springbootbuild 'https://github.com/iamvickyav/spring-boot-data-H2-embedded.git'
+
+
+//here 'MyLibrary' is the library name which is configured in the jenkins config system. we are passing the git url to build our app calling the shared library springbootbuild
