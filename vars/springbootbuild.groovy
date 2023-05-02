@@ -1,4 +1,3 @@
-
 def call(String repoUrl) {
   pipeline {
     
@@ -32,3 +31,4 @@ def call(String repoUrl) {
          }
      }
  }
+}
