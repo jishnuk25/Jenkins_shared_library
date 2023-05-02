@@ -1,6 +1,6 @@
 def call(String repoUrl) {
   pipeline {
-    
+    agent any
      stages {
          stage("Tools initialization") {
              steps {
